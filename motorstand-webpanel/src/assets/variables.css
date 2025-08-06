@@ -1,0 +1,26 @@
+@import-sanitize;
+
+html {
+    /* Цветовые переменные */
+    --dark: #111;
+    --dark90: #222;
+    --dark80: #333;
+
+    --gray60: #666;
+    --gray50: #555;
+
+    --white: #fff;
+    --white90: #eee;
+
+    --accent-light: #80dd58;
+    --accent: #55c126;
+    --accent-dark: #479b24;
+
+    --danger: #d00;
+
+    /* Стилевые переменные */
+    --TR-slow: .3s;
+
+    /* Прочее */
+    --fonts: system-ui,'Segoe UI', Roboto, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+}
