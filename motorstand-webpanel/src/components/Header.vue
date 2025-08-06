@@ -1,6 +1,8 @@
 <script setup lang="ts">
+    import type { StandStatus } from '../types'
+
     const { status } = defineProps<{
-        "status": "pending" | "active",
+        "status": StandStatus,
     }>()
 </script>
 

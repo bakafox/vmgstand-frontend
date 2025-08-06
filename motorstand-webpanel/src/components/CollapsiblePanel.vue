@@ -2,7 +2,7 @@
     import { ref } from 'vue'
 
     const { collapsible = true } = defineProps<{
-        "collapsible": boolean,
+        "collapsible"?: boolean,
     }>() 
 
     const isCollapsed = ref(false)
