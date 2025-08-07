@@ -16,8 +16,10 @@
 
     <div class="layout">
         <InfoPanel />
-        <ParamsPanel :status="standStatus" @standStatus="(s) => standStatus = s" />
-        <section class="panels-transition-arrow" />
+        <ParamsPanel :status="standStatus" @standStatus="(s: StandStatus) => standStatus = s" />
+        <div class="panels-transition-arrow">
+            <div class="panels-transition-arrow__inner" />
+        </div>
         <VisPanel />
     </div>
 </template>
@@ -34,9 +36,19 @@
         min-width: 100%; min-height: 100%;
         font-family: var(--fonts);
     }
+
     .layout {
         flex: 1;
         display: flex; flex-direction: row;
+    }
+
+    .panels-transition-arrow {
+        background-color: var(--dark80);
+    }
+    .panels-transition-arrow__inner {
+        width: 20px; height: 36px;
+        background-color: var(--dark90);
+        clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
     }
 
     h1 {

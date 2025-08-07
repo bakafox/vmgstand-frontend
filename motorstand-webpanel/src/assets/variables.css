@@ -20,6 +20,11 @@ html {
 
     /* Стилевые переменные */
     --TR-slow: .3s;
+    --TR-regular: .2s;
+
+    --BR-round: 9999px;
+    --BR-big: 12px;
+    --BR-small: 4px;
 
     /* Прочее */
     --fonts: system-ui,'Segoe UI', Roboto, Ubuntu, Cantarell, 'Open Sans', sans-serif;

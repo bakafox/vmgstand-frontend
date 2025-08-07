@@ -13,8 +13,8 @@
         <header>
             <h2><slot name="title"></slot></h2>
 
-            <button v-if="collapsible" title="Свернуть панель"
-                @click="() => isCollapsed = !isCollapsed"
+            <button class="collapse-btn" title="Свернуть панель"
+                v-if="collapsible" @click="() => isCollapsed = !isCollapsed"
             >–</button>
         </header>
 
@@ -24,8 +24,8 @@
     </aside>
 
     <aside v-else class="collapsed">
-        <button v-if="collapsible" title="Развернуть панель"
-            @click="() => isCollapsed = !isCollapsed"
+        <button class="collapse-btn" title="Развернуть панель"
+            v-if="collapsible" @click="() => isCollapsed = !isCollapsed"
         >+</button>
 
         <h2><slot name="title"></slot></h2>
@@ -42,11 +42,10 @@
             background-color: var(--dark90);
         }
     }
-
     .collapsed {
         max-width: 40px !important;
         align-items: center;
-        margin-top: 8px; gap: 8px;
+        padding-top: 8px; gap: 8px;
 
         & h2 {
             writing-mode: vertical-lr;
@@ -57,11 +56,17 @@
         display: flex;
         justify-content: space-between;
         width: 100%; min-height: 32px;
-        padding: 4px 8px;
+        padding: 8px;
+        line-height: 20px;
     }
-
     main {
         display: flex; flex-direction: column;
         padding: 0 8px;
+    }
+
+    .collapse-btn {
+        appearance: none;
+        width: 24px; height: 24px;
+        border-radius: var(--BR-round);
     }
 </style>
