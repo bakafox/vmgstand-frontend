@@ -1,0 +1,31 @@
+@import-sanitize;
+
+html {
+    /* цветовые переменные */
+    --black: #000;
+
+    --bg-light: #2f3136;   /* чуть светлее серо-графитовый */
+    --bg: #232529;         /* основной фон */
+    --bg-dark: #18191c;    /* самый тёмный */
+
+    --white: #fff;
+    --white-ish: color-mix(in srgb, var(--white), var(--black) 10%);
+    --white-pale: color-mix(in srgb, var(--white), var(--black) 30%);
+
+    --accent-light: #8ae67d; /* нежно-зелёный */
+    --accent: #4ad05f;       /* основной акцент (зелёный лайм) */
+    --accent-dark: #379a47;  /* глубокий зелёный */
+
+    --danger: #e6241d;
+
+    /* стилевые переменные */
+    --fonts: system-ui, 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+
+    --TR-slow: .4s;
+    --TR-regular: .2s;
+    --TR-fast: .1s;
+
+    --BR-round: 999px;
+    --BR-big: 12px;
+    --BR-small: 4px;
+}
