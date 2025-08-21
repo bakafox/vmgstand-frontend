@@ -1,6 +1,4 @@
 node_modules/
 dist/
+docs/
 .env
-
-# Старая версия, неактуально
-motorstand-webpanel/

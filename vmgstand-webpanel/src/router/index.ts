@@ -34,7 +34,16 @@ const router = createRouter({
                     name: 'docs',
                     component: () => import('../views/DocsView.vue'),
                 },
+                {
+                    path: 'team',
+                    name: 'team',
+                    component: () => import('../views/TeamView.vue'),
+                },
             ]
+        },
+        {
+            path: '/:pathMatch(.*)*',
+            redirect: '/',
         },
     ],
 })
